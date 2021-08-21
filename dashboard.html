@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font€Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body class="bg-indigo-500">
+
+    <!-- Main section start -->
+    <main class="w-4/5 mx-auto bg-white py-2 md:py-8 mt-20 rounded-tr-3xl">
+        <header class="pb-8">
+            <h1 class="text-5xl text-center text-indigo-400 font font-semibold"> <i class="fas fa-university"></i> Dashboard <span class="text-indigo-600 font-bold">QCB</span></h1>
+        </header>
+        <section class="statics-section">
+            <div class="grid md:grid-cols-3 gap-4">
+                <!-- Deposit statics -->
+                <div class="bg-blue-500 text-white w-10/12 p-4 mx-auto rounded-lg shadow-xl">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">0</span></h2>
+                </div>
+                <!-- Withdraw statics -->
+                <div class="bg-indigo-500 text-white w-10/12 p-4 mx-auto rounded-lg shadow-xl">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">0</span></h2>
+                </div>
+                <!-- Balance statics -->
+                <div class="bg-green-500 text-white w-10/12 p-4 mx-auto rounded-lg shadow-xl">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-total">100</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit & withdraw section -->
+        <section class="deposit-withdraw">
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Deposit section -->
+                <div class="p-8 bg-purple-500 m-2 md:m-8 rounded-2xl relative">
+                    <h2 class="text-3xl font-semibold mb-4 text-white">Deposit here</h2>
+                    <!-- single input field -->
+                    <div class="single-inpit flex items-center py-2 px-2 border-2 border-gray-200 rounded-3xl mb-2 bg-white">
+                        <i class="fas fa-hand-holding-usd mx-4 text-indigo-600 text-3xl font-bold "></i>
+                        <input id="deposit-input" class="block w-full border-0 text-base outline-none" type="text" placeholder="Enter amount">
+                    </div>
+                    <!-- Deposit error -->
+                    <p id="depo-error" class="text-2xl text-red-300 text-center mb-2 hidden">Please Enter Valid Input!</p>
+                    <!-- deposit button -->
+                    <button id="deposit-btn" class=" py-2 px-8 border-2 border-gray-200 rounded-3xl bg-white border-0 text-lg font-semibold text-center mx-auto outline-none block w-full shadow-xl">Deposit</button>
+
+                </div>
+                <!-- Withdraw section -->
+                <div class="p-8 bg-pink-500 m-2 md:m-8 rounded-2xl">
+                    <h2 class="text-3xl font-semibold mb-4 text-white">Withdraw here</h2>
+                    <!-- single input field -->
+                    <div class="single-inpit flex items-center py-2 px-2 border-2 border-gray-200 rounded-3xl mb-2 bg-white">
+                        <i class="fas fa-hand-holding-usd mx-4 text-indigo-600 text-3xl font-bold "></i>
+                        <input id="withdraw-input" class="block w-11/12 border-0 text-base outline-none" type="text" placeholder="Enter amount">
+                    </div>
+                    <!-- Withdraw error -->
+                    <p id="withdraw-error" class="text-2xl text-red-300 text-center mb-2 hidden">Please Enter Valid Input!</p>
+                    <!-- Withdraw button -->
+                    <button id="withdraw-btn" class=" py-2 px-8 border-2 border-gray-200 rounded-3xl bg-white border-0 text-lg font-semibold text-center mx-auto outline-none block md:inline w-full shadow-xl">Withdraw</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
