@@ -1,72 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Samiul Islam" />
     <title>Login - QuikCashBank</title>
     <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <!-- Font€Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body class="bg-indigo-500">
-
-    <main class="flex  items-center md:mt-20">
-        <!-- Main login section -->
-        <section class="md:w-3/4 bg-white mx-auto rounded-tr-3xl">
-            <!-- login section header -->
-            <header class="">
-                <h1 class="text-3xl md:text-5xl text-center pt-4 text-indigo-400 font-semibold">Welcome to <br><span class="text-indigo-600 font-bold">Quick Cash Bank</span></h1>
-            </header>
-            <!-- login section wrapper -->
-            <div class="main-content-wrapper grid md:grid-cols-2 gap-4 md:my-10 py-10">
-                <!-- login left section -->
-                <div class="left-section">
-                    <img class="w-2/4 mx-auto rounded-full" src="assets/images/bank.png" alt="">
-                </div>
-                <!-- login right section -->
-                <div class="right-section w-10/12 mx-auto md:w-3/4 ">
-                    <div class="welcome-user text-center flex flex-col justify-center items-center">
-                        <img class="w-1/5" src="assets/images/user.webp" alt="">
-                        <h4 class="text-lg font-semibold">Member Login</h4>
-                    </div>
-                    <!-- login form start -->
-                    <div class="form">
-                        <!-- single input field -->
-                        <div class="single-inpit flex items-center py-2 border-2 border-gray-200 rounded-3xl mb-2">
-                            <i class="fas fa-envelope mx-4 text-indigo-600 text-3xl font-bold "></i>
-                            <input id="input-email" class="block w-11/12 border-0 text-base outline-none" type="email" placeholder="Enter email">
-                        </div>
-                        <!-- single input field -->
-                        <div class="single-inpit flex items-center py-2 border-2 border-gray-200 rounded-3xl mb-2">
-                            <i class="fas fa-lock mx-4 text-indigo-600 text-3xl font-bold "></i>
-                            <input id="input-password" class="block w-11/12 border-0 text-base outline-none" type="password" placeholder="Enter password">
-                        </div>
-                        <!-- Submit button -->
-                        <div class="single-inpit flex items-center py-2 border-2 border-gray-200 rounded-3xl">
-                            <button id="login-btn" class="block w-11/12 border-0 text-base outline-none">Login </button>
-                        </div>
-                        <p id="error-message" class="text-base text-red-500 text-center mt-2 hidden">Please enter valid details!</p>
-
-                    </div>
-                </div>
+  <body class="bg-indigo-500">
+    <main class="flex items-center md:mt-20">
+      <!-- Main login section -->
+      <section class="md:w-3/4 bg-white mx-auto rounded-tr-3xl">
+        <!-- login section header -->
+        <header class="">
+          <h1
+            class="
+              text-3xl
+              md:text-5xl
+              text-center
+              pt-4
+              text-indigo-400
+              font-semibold
+            "
+          >
+            Welcome to <br /><span class="text-indigo-600 font-bold"
+              >Quick Cash Bank</span
+            >
+          </h1>
+        </header>
+        <!-- login section wrapper -->
+        <div
+          class="main-content-wrapper grid md:grid-cols-2 gap-4 md:my-10 py-10"
+        >
+          <!-- login left section -->
+          <div class="left-section">
+            <img
+              class="w-2/4 mx-auto rounded-full"
+              src="assets/images/bank.png"
+              alt=""
+            />
+          </div>
+          <!-- login right section -->
+          <div class="right-section w-10/12 mx-auto md:w-3/4">
+            <div
+              class="
+                welcome-user
+                text-center
+                flex flex-col
+                justify-center
+                items-center
+              "
+            >
+              <img class="w-1/5" src="assets/images/user.webp" alt="" />
+              <h4 class="text-lg font-semibold">Member Login</h4>
             </div>
-        </section>
+            <!-- login form start -->
+            <div class="form">
+              <!-- single input field -->
+              <div
+                class="
+                  single-inpit
+                  flex
+                  items-center
+                  py-2
+                  border-2 border-gray-200
+                  rounded-3xl
+                  mb-2
+                "
+              >
+                <i
+                  class="
+                    fas
+                    fa-envelope
+                    mx-4
+                    text-indigo-600 text-3xl
+                    font-bold
+                  "
+                ></i>
+                <input
+                  id="input-email"
+                  class="block w-11/12 border-0 text-base outline-none"
+                  type="email"
+                  placeholder="Enter email"
+                />
+              </div>
+              <!-- single input field -->
+              <div
+                class="
+                  single-inpit
+                  flex
+                  items-center
+                  py-2
+                  border-2 border-gray-200
+                  rounded-3xl
+                  mb-2
+                "
+              >
+                <i
+                  class="fas fa-lock mx-4 text-indigo-600 text-3xl font-bold"
+                ></i>
+                <input
+                  id="input-password"
+                  class="block w-11/12 border-0 text-base outline-none"
+                  type="password"
+                  placeholder="Enter password"
+                />
+              </div>
+              <!-- Submit button -->
+              <div
+                class="
+                  single-inpit
+                  flex
+                  items-center
+                  py-2
+                  border-2 border-gray-200
+                  rounded-3xl
+                "
+              >
+                <button
+                  id="login-btn"
+                  class="block w-11/12 border-0 text-base outline-none"
+                >
+                  Login
+                </button>
+              </div>
+              <p
+                id="error-message"
+                class="text-base text-red-500 text-center mt-2 hidden"
+              >
+                Please enter valid details!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="bg-white pb-4 md:w-3/4 mx-auto">
-        <!-- Demo test helps user -->
-        <p class="text-center text-base text-indigo-400 font-medium">For demo login just use Email:<span class="text-indigo-600"> isamiul146@gmail.com</span> & Password: <span class="text-indigo-600">1234</span></p>
+      <!-- Demo test helps user -->
+      <p class="text-center text-base text-indigo-400 font-medium">
+        For demo login just use Email:<span class="text-indigo-600">
+          abc@gmail.com</span
+        >
+        & Password: <span class="text-indigo-600">1234</span>
+      </p>
     </footer>
-
 
     <!-- Script -->
     <script src="assets/js/login.js"></script>
-</body>
-
+  </body>
 </html>
