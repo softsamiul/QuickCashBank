@@ -67,12 +67,12 @@ document.getElementById('deposit-btn').addEventListener('click', function() {
         updateTotal('deposit-total', inputAmount);
         updateBalance('balance-total', inputAmount, true);
 
-        // throwerror('depo-error', false);
+        throwerror('depo-error', false);
         throwSuccessMessage('depo-success', true);
         hideMessage('depo-success', 'depo-cross');
     } else {
         throwerror('depo-error', true);
-        // throwSuccessMessage('depo-success', false);
+        throwSuccessMessage('depo-success', false);
     }
 });
 // handling withdraw
@@ -84,7 +84,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function() {
         updateTotal('withdraw-total', inputAmount);
         updateBalance('balance-total', inputAmount, false);
 
-        // throwerror('withdraw-error', false);
+        throwerror('withdraw-error', false);
         throwSuccessMessage('withdraw-success', true);
         hideMessage('withdraw-success', 'withdraw-cross');
     } else {
